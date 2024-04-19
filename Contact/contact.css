@@ -2,6 +2,7 @@
   --primary-color: rgba(13, 110, 139, 0.75);
   --secondary-color: rgba(229, 148, 0, 0.9);
   --overlay-color: rgba(24, 39, 51, 0.85);
+  --light-color: rgba(162, 213, 228, 0.75);
   --menu-speed: 0.75;
 }
 
@@ -82,7 +83,7 @@ h2 {
 
 .form textarea:focus {
   outline: none;
-  border-color: rgba(162, 213, 228, 0.75);
+  border-color: var(--light-color);
 }
 
 .submit {
