@@ -1,0 +1,58 @@
+.class{
+  background-color: grey;
+  width: 350px;
+  height: 550px;
+}
+
+.sign{
+  background-color: rgba(0, 0, 255, 0.612);
+  text-align: center;
+  width: 172px;
+  height: 23px;
+  margin-left: 39px;
+  border-radius: 5px;
+}
+
+.sign h5{
+  padding-top: 2.5px;
+}
+
+.sign a{
+  color: white;
+  text-decoration: none;
+}
+
+.wrap{
+  margin-left: 38px;
+}
+
+.wrap h6{
+  margin-left: 40px;
+}
+
+.pop{
+  margin-left: 45px;
+}
+
+h1{
+  text-align: center;
+}
+
+h4{
+  text-align: center;
+}
+
+form{
+  padding-left: 40px;
+}
+
+label{
+  display: block;
+  margin-top: 20px;
+}
+
+form input{
+  width: 70%;
+}
+
+

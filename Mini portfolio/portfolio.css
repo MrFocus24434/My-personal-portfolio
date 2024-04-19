@@ -1,0 +1,50 @@
+body{
+  background-color: grey;
+  text-align: center;
+}
+
+h1{
+  color: white;
+  word-spacing: 10px;
+  letter-spacing: 5px;
+  font-variant: small-caps;
+}
+
+.wrap{
+  background-color: white;
+  width: 750px;
+  margin: auto;
+}
+
+.wrap p{
+  text-align: justify;
+  padding: 10px;
+}
+
+.class{
+  background-color: white;
+  width: 750px;
+  margin: auto;
+}
+
+.class ul{
+  text-align: left;
+  margin: 5px;
+}
+
+.even{
+  background-color: white;
+  width: 750px;
+  margin: auto;
+}
+
+.even p{
+  text-align: justify;
+  padding: 10px;
+}
+
+.contact{
+  background-color: white;
+  width: 750px;
+  margin: auto;
+}

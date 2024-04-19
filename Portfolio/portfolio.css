@@ -1,0 +1,163 @@
+:root{
+  --primary-color: rgba(13, 110, 139, 0.75);
+  --secondary-color: rgba(229, 148, 0, 0.9);
+  --overlay-color: rgba(24, 39, 51, 0.85);
+  --menu-speed: 0.75;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+.container{
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 3rem;
+}
+
+#showcase{
+  background: var(--primary-color);
+  color: #fff;
+  height: 230vh;
+  position: relative;
+}
+
+#showcase::before{
+  content: '';
+  background: url(../image/hotel\ 3.jpeg) no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 230vh;
+  z-index: -1;
+}
+
+#showcase .showcase-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 230vh;
+}
+
+/* Utility */
+
+.py-1 { padding: 1.5rem 0; }
+.py-2 { padding: 2rem 0; }
+.py-3 { padding: 3rem 0; }
+.p-1 { padding: 1.5rem; }
+.p-2 { padding: 2rem; }
+.p-3 { padding: 3rem; }
+
+.l-heading {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.category{
+  display: inline-block;
+  background: var(--primary-color);
+  font-size: .55rem;
+  text-transform: uppercase;
+  padding: 0.4rem 0.6rem;
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
+}
+
+.card{
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+img {
+  width: 250px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+p {
+  color: black;
+}
+
+.card a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.card a:hover {
+  background: rgba(162, 213, 228, 0.75);
+  color: #fff;
+}
+
+/* Portfolio Resume */
+
+#home-articles .articles-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
+ /* Footer */
+ .footer {
+  background: white;
+  text-align: center;
+  font-style: italic;
+  
+  }
+
+  /* media Queries */
+
+@media (max-width: 768px) {
+  #home-articles .articles-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #showcase .showcase-container{
+    height: 340vh;
+  }
+
+  #showcase{
+    height: 365vh;
+  }
+  
+  #showcase::before{
+    height: 365vh;
+  }
+}
+  
+  @media (max-width: 600px) {
+    #home-articles .articles-container {
+      grid-template-columns: 1fr;
+    }
+
+    #showcase .showcase-container{
+      height: 555vh;
+    }
+  
+    #showcase{
+      height: 555vh;
+    }
+    
+    #showcase::before{
+      height: 555vh;
+    }
+
+  
+    l-heading {
+      font-size: 2rem;
+    }
+  }
+
