@@ -12,7 +12,7 @@
 }
 
 body{
-  font-family: sans-serif;
+  font-family: "Dosis", sans-serif;
   line-height: 1.4;
 }
 
@@ -52,6 +52,7 @@ body{
 
 #showcase h1{
   font-size: 3rem;
+  text-shadow: 3px 10px 3px #333;
 }
 
 #showcase p{
@@ -79,6 +80,36 @@ text-decoration: none;
   text-align: center;
   font-style: italic;
   
+  }
+
+  /* Media Queries */
+
+  @media (max-width: 768px) {
+    #showcase .showcase-container{
+      height: 70vh;
+    }
+
+    #showcase h1{
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 450px) {
+    #showcase .showcase-container{
+      height: 115vh;
+    }
+
+    #showcase h1{
+      font-size: 1rem;
+    }
+
+    #showcase{
+      height: 120vh;
+    }
+    
+    #showcase::before{
+      height: 120vh;
+    }
   }
 
 

@@ -12,7 +12,7 @@
 }
 
 body{
-  font-family: sans-serif;
+  font-family: "Dosis", sans-serif;
   line-height: 1.4;
 }
 
@@ -84,6 +84,10 @@ img {
   width: 250px;
   height: 200px;
   border-radius: 10px;
+}
+
+img:hover {
+  transform: scale(1.09);
 }
 
 p {

@@ -12,7 +12,7 @@
 }
 
 body{
-  font-family: sans-serif;
+  font-family: "Dosis", sans-serif;
   line-height: 1.4;
 }
 
@@ -86,6 +86,10 @@ img {
   border-radius: 10px;
 }
 
+img:hover {
+  transform: scale(0.9);
+}
+
 p {
   color: black;
 }
@@ -132,6 +136,7 @@ h3 {
   }
 }
   
+/* Media Queries */
   @media (max-width: 600px) {
 
     #home-articles .articles-container {
