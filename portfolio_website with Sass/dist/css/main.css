@@ -454,12 +454,20 @@ img {
         }
 
         #main-footer p {
-          font-size: 0.6rem;
+          font-size: 0.5rem;
+        }
+
+        #main-footer .social .fa-brands {
+          margin-left: -1rem;
         }
 
         #about-a .about-info {
           margin-left: 0;
           margin-right: 0rem;
+        }
+
+        #about-a {
+          margin-top: -450px;
         }
 
         #about-a .lead {
@@ -502,14 +510,32 @@ img {
           margin-right: 0;
         } 
 
+        #work-a {
+          margin-top: -450px;
+        }
+
         #work-a .items {
           display: block;
+        }
+
+        #contact-a {
+          margin-top: -450px;
         }
 
         #contact-a .text-fields {
           display: block;
           margin-left: 0;
           margin-right: 0;
+        }
+
+        #contact-b .contact-info {
+          display: block;
+          margin-left: 0;
+          margin-right: 0;
+        }
+
+        #contact-c h1 {
+          font-size: 1.5rem;
         }
 
       }
