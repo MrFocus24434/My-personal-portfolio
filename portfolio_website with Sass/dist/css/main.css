@@ -1,3 +1,15 @@
+@media (max-width: 450px) {
+  #main-nav {
+    display: block;
+    justify-content: center;
+    padding-top: 1rem; }
+    #main-nav ul {
+      display: bl; }
+    #main-nav li {
+      padding: 1rem 1.5rem; }
+  #header-home .header-content h1 {
+    font-size: 1rem; } }
+
 .container {
   max-width: 1280px;
   padding: 0 1.5rem;
@@ -105,6 +117,18 @@ input[class^='btn-']:hover {
     #work-a .items img {
       width: 405px;
       height: 250px; }
+
+@media (max-width: 450px) {
+  #main-nav {
+    display: block;
+    justify-content: center;
+    padding-top: 1rem; }
+    #main-nav ul {
+      display: bl; }
+    #main-nav li {
+      padding: 1rem 1.5rem; }
+  #header-home .header-content h1 {
+    font-size: 1rem; } }
 
 * {
   margin: 0;
@@ -311,7 +335,9 @@ img {
   border-top: 3px solid #ffbc00; }
   #contact-a .text-fields {
     display: grid;
-    grid-template-areas: 'name email' 'subject phone' 'message message';
+    grid-template-areas: 'name email'
+ 'subject phone'
+ 'message message';
     grid-gap: 1.2rem;
     margin-left: 10rem;
     margin-right: 10rem;
@@ -370,3 +396,121 @@ img {
       padding: 0.5rem; }
       #main-footer .footer-content .social .fa-brands:hover {
         background: #ffbc00; }
+
+
+      /* Media Queries */
+        @media(max-width: 450px) {
+          #logo {
+            justify-content: center;
+          }
+
+          #main-nav {
+            display: block;
+            margin-left: 125px;
+            justify-content: center;
+            
+            ul {
+              display: block;
+            }
+          }
+
+          #header-home .header-content h1 {
+           font-size: 1.3rem;
+        } 
+
+        #home-a .specials {
+          display: block;
+        }
+
+        #home-b .stats {
+          display: block;
+        }
+
+        #home-c .section-title {
+          font-size: 1.5rem;
+        }
+
+        #home-c .process {
+          display: block;
+        }
+
+        #home-c .process .process-icon {
+          width: 50px;
+          height: 50px;
+          padding: 1.5rem;
+        }
+
+        #home-c .process .process-icon:hover {
+          width: 70px;
+          height: 70px;
+          line-height: 70px;
+        }
+
+        #home-c .process .process-step {
+          font-size: 15px;
+          width: 10px;
+          height: 10px;
+          line-height: 10px;
+        }
+
+        #main-footer p {
+          font-size: 0.6rem;
+        }
+
+        #about-a .about-info {
+          margin-left: 0;
+          margin-right: 0rem;
+        }
+
+        #about-a .lead {
+          font-size: 15px;
+        }
+
+        #about-a main {
+          display: block;
+        }
+
+        #about-a main .bio-image {
+          border-radius: 50%;
+          margin-bottom: 5px;
+        }
+
+        #about-a main .bio {
+        margin-left: 0;
+        margin-top: 0;
+        padding-top: 0;
+        border-left: none;
+        margin-top: 5px;
+        }
+
+        #about-a .award {
+          display: block;
+        }
+
+        #about-b .progress {
+          margin-left: 0;
+          margin-right: 0;
+        }
+
+        #about-b h4 {
+          margin-left: 0;
+        }
+
+        #about-d .testimonials {
+          display: block;
+          margin-left: 0;
+          margin-right: 0;
+        } 
+
+        #work-a .items {
+          display: block;
+        }
+
+        #contact-a .text-fields {
+          display: block;
+          margin-left: 0;
+          margin-right: 0;
+        }
+
+      }
+          

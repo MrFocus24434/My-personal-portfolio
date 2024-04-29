@@ -6,3 +6,30 @@ $medium-color: #ccc;
 $dark-color: #333;
 $bg-image: url('../image/bg-5.avif');
 $nav-img: url('../dist/image/bg-4.avif');
+
+@media(max-width: 450px) {
+  #main-nav {
+      display: block;
+      justify-content: center;
+      padding-top: 1rem;
+    
+      ul {
+        display: bl;
+      }
+    
+      li {
+        padding: 1rem 1.5rem;
+      }
+  }
+  
+  #header {
+    &-home {
+      // Header Content
+    .header-content {
+      h1 {
+        font-size: 1rem;
+      }
+    }
+  }
+  }
+  }

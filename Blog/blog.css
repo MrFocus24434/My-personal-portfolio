@@ -82,3 +82,41 @@ img{
 .trend a :hover{
   color: blue;
 }
+
+/* Media Queries */
+@media(max-width: 450px) {
+  .class{
+    width: 590px;
+  }
+
+  .wrap{
+    float: none;
+    width: 615px;
+  }
+
+  .trend{
+    margin-left: 0;
+    width: 615px;
+    margin-top: -20px;
+  
+  }
+}
+
+
+@media(min-width: 451px) and (max-width: 768px) {
+  .class{
+    width: 735px;
+  }
+
+  .wrap{
+    float: none;
+    width: 760px;
+  }
+
+  .trend{
+    margin-left: 0;
+    width: 760px;
+    margin-top: -20px;
+  
+  }
+}

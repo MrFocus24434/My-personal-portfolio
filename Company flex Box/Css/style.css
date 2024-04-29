@@ -192,12 +192,13 @@ p{
 }
 
 /* Section: Contact */
+#contact .contact-form {
+  width: 100%;
+}
 
-#contact .map img{
-  float: right;
-  width: 710px;
-  height: 475px;
-  padding-bottom: 5px;
+#contact h2,
+#contact p {
+  text-align: center;
 }
 
 #contact .contact-form .form-group{
