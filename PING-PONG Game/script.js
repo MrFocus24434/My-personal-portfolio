@@ -1,9 +1,11 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const player = document.getElementById("player");
-  const computer = document.getElementById("computer");
-  const ball1 = document.getElementById("ball1");
-  const ball2 = document.getElementById("ball2");
-  const gameArea = document.querySelector(".game-area");
+document.addEventListener('DOMContentLoaded', function() {
+  const player = document.getElementById('player');
+  const computer = document.getElementById('computer');
+  const ball1 = document.getElementById('ball1');
+  const ball2 = document.getElementById('ball2');
+  const gameArea = document.querySelector('.game-area');
+  const playerScoreDisplay = document.getElementById('player-score');
+  const computerScoreDisplay = document.getElementById('computer-score');
 
   let playerPosition = 200;
   let computerPosition = 200;
@@ -29,23 +31,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Ball1 collision with player paddle
-    if (
-      ball1X <= 30 &&
-      ball1Y >= playerPosition &&
-      ball1Y <= playerPosition + 100
-    ) {
+    if (ball1X <= 30 && ball1Y >= playerPosition && ball1Y <= playerPosition + 100) {
       ballSpeedX1 = -ballSpeedX1;
       playerScore++;
+      updateScoreboard();
     }
 
     // Ball1 collision with computer paddle
-    if (
-      ball1X >= 770 &&
-      ball1Y >= computerPosition &&
-      ball1Y <= computerPosition + 100
-    ) {
+    if (ball1X >= 770 && ball1Y >= computerPosition && ball1Y <= computerPosition + 100) {
       ballSpeedX1 = -ballSpeedX1;
       computerScore++;
+      updateScoreboard();
     }
 
     // Ball1 out of bounds
@@ -65,23 +61,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Ball2 collision with player paddle
-    if (
-      ball2X <= 30 &&
-      ball2Y >= playerPosition &&
-      ball2Y <= playerPosition + 100
-    ) {
+    if (ball2X <= 30 && ball2Y >= playerPosition && ball2Y <= playerPosition + 100) {
       ballSpeedX2 = -ballSpeedX2;
       playerScore++;
+      updateScoreboard();
     }
 
     // Ball2 collision with computer paddle
-    if (
-      ball2X >= 770 &&
-      ball2Y >= computerPosition &&
-      ball2Y <= computerPosition + 100
-    ) {
+    if (ball2X >= 770 && ball2Y >= computerPosition && ball2Y <= computerPosition + 100) {
       ballSpeedX2 = -ballSpeedX2;
       computerScore++;
+      updateScoreboard();
     }
 
     // Ball2 out of bounds
@@ -113,6 +103,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  function updateScoreboard() {
+    playerScoreDisplay.textContent = `Player: ${playerScore}`;
+    computerScoreDisplay.textContent = `Computer: ${computerScore}`;
+  }
+
   function gameLoop() {
     update();
     requestAnimationFrame(gameLoop);
@@ -131,18 +126,19 @@ document.addEventListener("DOMContentLoaded", function () {
     ballSpeedY2 = 5;
     playerScore = 0;
     computerScore = 0;
+    updateScoreboard(); // Reset scoreboard on restart
   }
 
   gameLoop();
 
   // Keyboard event listeners for player control
-  document.addEventListener("keydown", function (event) {
-    if (event.key === "ArrowUp") {
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'ArrowUp') {
       playerPosition -= 10;
       if (playerPosition < 0) {
         playerPosition = 0;
       }
-    } else if (event.key === "ArrowDown") {
+    } else if (event.key === 'ArrowDown') {
       playerPosition += 10;
       if (playerPosition > 300) {
         playerPosition = 300;
