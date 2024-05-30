@@ -26,7 +26,7 @@ body{
 #showcase{
   background: var(--primary-color);
   color: #fff;
-  height: 350vh;
+  height: 500vh;
   position: relative;
 }
 
@@ -37,7 +37,7 @@ body{
   top: 0;
   left: 0;
   width: 100%;
-  height: 350vh;
+  height: 500vh;
   z-index: -1;
 }
 
@@ -47,7 +47,7 @@ body{
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 350vh;
+  height: 500vh;
 }
 
 /* Utility */
@@ -130,15 +130,15 @@ p {
   }
 
   #showcase .showcase-container{
-    height: 365vh;
+    height: 400vh;
   }
 
   #showcase{
-    height: 365vh;
+    height: 400vh;
   }
   
   #showcase::before{
-    height: 365vh;
+    height: 400vh;
   }
 }
   
@@ -148,15 +148,15 @@ p {
     }
 
     #showcase .showcase-container {
-      height: 770vh;
+      height: 920vh;
     }
   
     #showcase{
-      height: 770vh;
+      height: 920vh;
     }
     
     #showcase::before{
-      height: 770vh;
+      height: 920vh;
     }
 
   
