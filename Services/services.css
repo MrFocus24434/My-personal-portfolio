@@ -144,15 +144,15 @@ h3 {
     }
 
     #showcase .showcase-container{
-      height: 385vh;
+      height: 370vh;
     }
   
     #showcase{
-      height: 555vh;
+      height: 370vh;
     }
     
     #showcase::before{
-      height: 555vh;
+      height: 370vh;
     }
 
   

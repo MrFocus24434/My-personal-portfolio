@@ -148,15 +148,15 @@ p {
     }
 
     #showcase .showcase-container {
-      height: 1020vh;
+      height: 1000vh;
     }
   
     #showcase{
-      height: 1020vh;
+      height: 1000vh;
     }
     
     #showcase::before{
-      height: 1020vh;
+      height: 1000vh;
     }
 
   
