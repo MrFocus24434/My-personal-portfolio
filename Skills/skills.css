@@ -194,15 +194,15 @@ border-color: transparent white transparent transparent;
     }
 
     #showcase{
-      height: 520vh;
+      height: 450vh;
     }
 
     #showcase::before{
-      height: 520vh;
+      height: 450vh;
     }
 
     #showcase .showcase-container{
-      height: 520vh;
+      height: 450vh;
   }
 }
 
